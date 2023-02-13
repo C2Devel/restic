@@ -84,7 +84,7 @@ Backup destinations can be:
 
 
 Name:    restic
-Release: 1%{buildid}%{?dist}
+Release: CROC1%{buildid}%{?dist}
 Summary: Fast, secure, efficient backup program
 URL:     %{gourl}
 License: BSD
