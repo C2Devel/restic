@@ -40,7 +40,7 @@ if (forgeurl ~= "") then
 	safeset("gourl", forgeurl)
 else
 	safeset("gourl", "https://" .. goipath)
-	rpm.expand("%forgemeta %{?-v} %{?-i} -s     %{?-p} -u %{gourl}\\n")
+	rpm.expand("%forgemeta %{?-v} %{?-i} -s     %{?-p} %{gourl}\\n")
 end
 if (rpm.expand("%{?forgesource}") ~= "") then
 	safeset("gosource", "%{forgesource}")
@@ -84,7 +84,7 @@ Backup destinations can be:
 
 
 Name:    restic
-Release: CROC1%{buildid}%{?dist}
+Release: CROC2%{buildid}%{?dist}
 Summary: Fast, secure, efficient backup program
 URL:     %{gourl}
 License: BSD
